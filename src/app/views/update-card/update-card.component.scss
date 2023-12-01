@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Domine:wght@400;500;600;700&family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+$libre-font: 'Libre Baskerville', serif;
+$abroreto-font: 'Aboreto cursive';
+$active-color: #6fa0ca    ;
+$open-font: 'Open Sans', sans-serif;
+$main-color: #3d74a1;
+$hover-color: #ffffff;
+$wordscolor: #395f7f;
+
+section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80px;
+  padding-bottom: 40px;
+
+
+  
+  article{
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    place-items: center;
+    column-gap: 20px;
+    border: 1px solid $main-color;
+    border-radius: 20px;
+
+    aside.image{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+
+        div.carousel{
+            width: 100% !important;
+            height: 100% !important;
+            border-radius: 20px !important;
+            div.carousel-inner{
+            width: 100% !important;
+            height: 100% !important;
+             border-radius: 20px !important;
+             div.carousel-item {
+              width: 100% !important;
+            height: 100% !important;
+             border-radius: 20px !important;
+             img{
+                width: 100% !important;
+                height: 100% !important;
+                 border-radius: 20px !important;
+             }
+             }
+            }
+        }
+    }
+    aside.hotelinfo{
+        width: 95%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        div.titlediv{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            h2{
+                width: 100%;
+                height: auto;
+                text-align: center;
+                color: $wordscolor;
+                font-family: $abroreto-font;
+                font-size: 40px;
+                word-spacing: 0.3em;
+                letter-spacing: 0.1em;
+            }
+        }
+
+        div.maindiv{
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 10px;
+            place-items: center;
+
+            div{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 10px;
+
+                span.first{
+                    width: auto;
+                    height: auto;
+                    color: black;
+                    font-size: 14px;
+                    font-weight: 700;
+                    font-family: $libre-font;
+                }
+
+                span.second{
+                    width: auto;
+                    height: auto;
+                    color: $wordscolor;
+                    font-size: 14px;
+                    font-weight: 500;
+                    font-family: $libre-font;
+                }
+            }
+        }
+
+        div.textdiv{
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 2fr;
+           
+            
+            div{
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                flex-wrap: wrap;
+
+                p{
+                    width: 100%;
+                    height: auto;
+                    text-align: left;
+                    font-family: $abroreto-font;
+                    color: black;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+
+                span{
+                    width: 100%;
+                    height: auto;
+                    text-align: justify;
+                    color: $wordscolor;
+                    font-size: 14px;
+                    font-weight: 500;
+                    font-family: $libre-font;
+                }
+            }
+        }
+
+        div.btnn{
+            width: 100%;
+            height: auto;
+            text-align: left;
+            margin: 0px;
+            padding: 0px;
+
+            button{
+                width: 30%;
+                height: 40px;
+                background-color: transparent;
+                border: 1px solid $main-color;
+                color: $main-color;
+                font-size: 14px;
+                font-family: $libre-font;
+                border-radius: 20px;
+            }
+            button:hover{
+                border-color: $active-color;
+                color: $active-color;
+            }
+        }
+
+    }
+}
+aside.addhotelaside{
+  width: 80%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+
+  div.titlediv{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+
+      h3{
+          width: 100%;
+          height: auto;
+          font-family: $abroreto-font;
+          color: $main-color;
+          font-size: 30px;
+          letter-spacing: 0.1em;
+          word-spacing: 0.3em;
+          text-align: center;
+      }
+  }
+
+  div.form{
+      border: 1px solid $main-color;
+      border-radius: 20px;
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+
+      div{
+          display: grid;
+          width: 32%;
+          height: auto;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr;
+          place-content: center;
+
+          label{
+              width: 100%;
+              height: 100%;
+              font-size: 15px;
+              font-family: $libre-font;
+              color: rgb(48, 46, 46);
+          }
+
+          input{
+              width: 100%;
+              height: 100%;
+              border-color: #789cbbb4;
+              color: $wordscolor;
+          }
+
+
+      }
+
+      div.mb-33{
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          width: 100%;
+          height: auto;
+          gap: 40px;
+
+          button{
+              width: 20%;
+              height: 40px;
+              background-color: transparent;
+              border: 1px solid $main-color;
+              color: $main-color;
+              font-size: 15px;
+              font-family: $libre-font;
+              border-radius: 20px;
+          }
+          button:hover{
+              border-color: $active-color;
+              color: $active-color;
+          }
+      }
+      
+      div.mb-32{
+          display: grid;
+          width: 32%;
+          height: auto;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 3fr;
+          place-content: center;    
+          
+          
+          label{
+              width: 100%;
+              height: 100%;
+              font-size: 15px;
+              font-family: $libre-font;
+              color: rgb(48, 46, 46);
+          }
+
+          textarea{
+              width: 100%;
+              height: 100%;
+              border-color: #789cbbb4;
+              color: $wordscolor;
+          }
+      }
+  }
+}
+
+}
+
+.temp {
+  width: 50px;
+  height: 50px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1352px){
+
+    section{
+    
+            article{
+                aside.hotelinfo{
+                    div.titlediv{
+                        h2{
+                            font-size: 25px;
+                        }
+                    }
+                    div.maindiv{
+                        column-gap: 2%;
+            
+                        div{
+            
+                            span.first{
+                                font-size: 12px;
+                            }
+            
+                            span.second{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+            
+                    div.textdiv{
+                        
+                        div{
+            
+                            p{
+                                font-size: 14px;
+                            }
+            
+                            span{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+            
+                    div.btnn{
+            
+                        button{
+                            font-size: 12px;
+                        }
+                    }
+            
+                }
+        }
+        aside.addhotelaside{
+            div.titlediv{
+                h3{
+                    font-size: 25px;
+                }
+            }
+            div.form{
+                div{
+                    width: 48%;
+                }
+                div.mb-32{
+                    width: 48%;
+                }
+            }
+        }
+    
+    
+    }
+}
+
+@media only screen and (max-width: 1272px){
+    article{
+        aside.hotelinfo{
+            div.maindiv{
+                column-gap: 2%;
+    
+                div{
+    
+                    span.first{
+                        font-size: 12px;
+                    }
+    
+                    span.second{
+                        font-size: 10px;
+                    }
+                }
+            }
+    
+            div.textdiv{
+                
+                div{
+    
+                    p{
+                        font-size: 12px;
+                    }
+    
+                    span{
+                        font-size: 10px;
+                    }
+                }
+            }
+    
+            div.btnn{
+    
+                button{
+                    font-size: 12px;
+                }
+            }
+    
+        }
+    }   
+}
+
+
+@media only screen and (max-width: 1186px){
+
+    section{
+        article{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            aside.hotelinfo{
+                div.maindiv{
+                    column-gap: 2%;
+        
+                    div{
+        
+                        span.first{
+                            font-size: 12px;
+                        }
+        
+                        span.second{
+                            font-size: 12px;
+                        }
+                    }
+                }
+        
+                div.textdiv{
+                    
+                    div{
+        
+                        p{
+                            font-size: 14px;
+                        }
+        
+                        span{
+                            font-size: 12px;
+                        }
+                    }
+                }
+        
+                div.btnn{
+        
+                    button{
+                        font-size: 12px;
+                    }
+                }
+        
+            }
+        }
+        }
+}
+
+@media only screen and (max-width: 814px){
+
+    section{
+        article{
+            grid-template-columns: 1fr;
+            aside.hotelinfo{
+                div.maindiv{
+        
+                    div{
+        
+                        span.first{
+                            font-size: 10px;
+                        }
+        
+                        span.second{
+                            font-size: 10px;
+                        }
+                    }
+                }
+        
+                div.textdiv{
+                    display: flex;
+                        width: 100%;
+                        flex-wrap: wrap;
+                        gap: 10%;
+                    div{
+                        display: flex;
+                        width: 100%;
+                        flex-wrap: wrap;
+                        padding: 0px;
+                        p{
+                            width: 100%;
+                            font-size: 12px;
+                            padding: 0px;
+                            margin: 1px;
+                        }
+        
+                        span{
+                            width: 100%;
+                            font-size: 10px;
+                            padding: 0px;
+                        }
+                    }
+                }
+        
+                div.btnn{
+        
+                    button{
+                        font-size: 10px;
+                    }
+                }
+        
+            }
+        }
+        }
+}
+    
+
+
+
+@media only screen and (max-width: 733px){
+
+    section{
+        aside.addhotelaside{
+            div.titlediv{
+    
+                h3{
+                    font-size: 20px;
+                    letter-spacing: 0em;
+                    word-spacing: 0em;
+                }
+            }
+    
+            div.form{
+                div{
+                    width: 100%;
+    
+                    label{
+                        font-size: 14px;
+                    }
+    
+    
+    
+                }
+                div.mb-33{
+    
+                    button{
+                        width: 40%;
+                        font-size: 14px;
+                    }
+                }
+                
+                div.mb-32{
+                    width: 100%;
+                    label{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    
+    
+    }
+}
+
+@media only screen and (max-width: 542px){
+
+    section{
+        article{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1%;
+            flex-wrap: wrap;
+            aside.hotelinfo{
+                div.maindiv{
+        
+                    div{
+        
+                        span.first{
+                            text-align: left;
+                        }
+                    }
+                }
+        
+            }
+        }
+        }
+        
+}
+
+
+@media only screen and (max-width: 483px){
+
+    section{
+    
+        article{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1%;
+            flex-wrap: wrap;
+            aside.hotelinfo{
+                div.maindiv{
+                    grid-template-columns: 1fr;
+                    div{
+        
+                        span.first{
+                            text-align: left;
+                        }
+                    }
+                }
+                div.btnn{
+                    button{
+                       font-size: 8px;
+                    }
+                }
+        
+            }
+        }
+        aside.addhotelaside{
+            width: 97%;
+            div.titlediv{
+    
+                h3{
+                    font-size: 20px;
+                    letter-spacing: 0em;
+                    word-spacing: 0em;
+                }
+            }
+    
+            div.form{
+                div{
+                    width: 100%;
+    
+                    label{
+                        font-size: 12px;
+                    }
+                    
+                    input{
+                        font-size: 10px;
+                    }
+    
+    
+    
+                }
+                div.mb-33{
+    
+                    button{
+                        width: 40%;
+                        font-size: 12px;
+                    }
+                }
+                
+                div.mb-32{
+                    width: 100%;
+                    label{
+                        font-size: 12px;
+                    }
+                    textarea{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    
+    
+    }
+}

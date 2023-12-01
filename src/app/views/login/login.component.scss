@@ -1,0 +1,274 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Domine:wght@400;500;600;700&family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+$libre-font: 'Libre Baskerville', serif;
+$abroreto-font: 'Aboreto cursive';
+$active-color: #6fa0ca    ;
+$open-font: 'Open Sans', sans-serif;
+$main-color: #3d74a1;
+$hover-color: #ffffff;
+$wordscolor: #395f7f;
+
+section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  article {
+    width: 70%;
+    height: auto;
+    border: 1px solid $main-color;
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    place-items: center;
+    place-content: center;
+    text-align: center;
+    padding: 1%;
+    }
+
+    aside.firstaside{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 95%;
+      height: 98%;
+
+      div{
+        display: flex;
+        width: 95%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        h3{
+          width: 100%;
+          height:auto;
+          text-align: center;
+          font-size: 35px;
+          letter-spacing: 0.5em;
+          font-family: $abroreto-font;
+          color: $main-color;
+        }
+        span{
+          width: 100%;
+          height: auto;
+          text-align: center;
+          font-size: 14px;
+          color: black;
+          font-family: $libre-font;
+        }
+        a{
+          width: 40%;
+          text-align: center;
+          height: 40px;
+          font-size: 14px;
+          text-decoration: none;
+          color: $main-color;
+          font-family: $libre-font;
+          border: 1px solid #395f7f;
+          border-radius: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        a:hover{
+          color: $active-color;
+          border-color: $active-color;
+        }
+      }
+    }
+
+    aside.secondaside{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      width: 95%;
+      height: 98%;
+      margin: 0px;
+      padding: 0px;
+
+      div.mb-3{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+
+        label{
+          width: 100%;
+          height: auto;
+          font-size: 15px;
+          font-family: $libre-font;
+          color: rgb(39, 37, 37);
+          text-align: left;
+        }
+
+        input{
+          width: 90%;
+          border-color: #80a6c5a2;
+        }
+      }
+
+      div.loginbutton{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        gap: 50px;
+
+        button{
+          width: 30%;
+          height: 40px;
+          font-size: 15px;
+          font-family: $libre-font;
+          color:$main-color;
+          background-color: transparent;
+          border-radius: 20px;
+          border: 1px solid $main-color
+        }
+        button:hover{
+          border-color: $active-color;
+          color: $active-color;
+        }
+      }
+    }
+}
+
+@media only screen and (max-width: 1310px){
+  section {
+    article {
+      aside.firstaside{
+        div{
+          h3{
+            letter-spacing: 0.2em;
+            font-size: 25px;
+          }
+          span{
+            font-size: 12px;
+          }
+          a{
+            font-size: 12px;
+          }
+        }
+      }
+       aside.secondaside{
+
+      div.mb-3{
+
+        label{
+          font-size: 12px;
+        }
+      }
+
+      div.loginbutton{
+
+        button{
+          font-size: 12px;
+        }
+      }
+    }
+    }
+  }
+}
+@media only screen and (max-width: 1254px){
+  section {
+    article {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      aside.firstaside{
+        div{
+          h3{
+            letter-spacing: 0.2em;
+            font-size: 25px;
+          }
+          span{
+            font-size: 12px;
+          }
+          a{
+            font-size: 12px;
+          }
+        }
+      }
+       aside.secondaside{
+
+      div.mb-3{
+
+        label{
+          font-size: 12px;
+        }
+        input{
+          width: 100%;
+        }
+      }
+
+      div.loginbutton{
+
+        button{
+          font-size: 12px;
+        }
+      }
+    }
+    }
+  }
+}
+@media only screen and (max-width: 460px){
+  section {
+    article {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      aside.firstaside{
+        div{
+          h3{
+            letter-spacing: 0.2em;
+            font-size: 20px;
+          }
+          span{
+            font-size: 10px;
+          }
+          a{
+            width: 50%;
+            font-size: 8px;
+          }
+        }
+      }
+       aside.secondaside{
+
+      div.mb-3{
+
+        label{
+          font-size: 10px;
+        }
+        input{
+          width: 100%;
+        }
+      }
+
+      div.loginbutton{
+
+        button{
+          font-size: 10px;
+          width: 50%;
+        }
+        div.google-icon-wrapper{
+          img{
+            width: 25px !important;
+            height: 25px !important;;
+          }
+        }
+      }
+    }
+    }
+  }
+}

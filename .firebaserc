@@ -1,0 +1,21 @@
+{
+  "targets": {
+    "angularproject": {
+      "hosting": {
+        "lesson49": [
+          "travelmore-company"
+        ]
+      }
+    },
+    "travelmore-11": {
+      "hosting": {
+        "lesson49": [
+          "travelmore-company"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "travelmore-company"
+  }
+}

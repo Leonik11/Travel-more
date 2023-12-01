@@ -1,0 +1,26 @@
+<section>
+  <article>
+     <aside>
+          <h3>REGISTRATION</h3>
+          <span>It's quick and easy.</span>
+      </aside>
+    <div class="mb-3">
+      <label class="form-label">Full Name</label>
+      <input type="text" class="form-control" [(ngModel)]="fullName">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">ID</label>
+      <input type="text" class="form-control" [(ngModel)]="id">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Email address</label>
+      <input type="email" class="form-control" aria-describedby="emailHelp" [(ngModel)]="email">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Password</label>
+      <input type="password" class="form-control" [(ngModel)]="password">
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="register()">Register</button>
+  </article>
+</section>

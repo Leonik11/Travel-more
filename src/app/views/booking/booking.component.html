@@ -1,0 +1,30 @@
+<section>
+    <div class="accordionn"  id="flush-collapseOne" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="text">
+            <h2>BOOKING INFORMATION</h2>
+        </div>
+        <div class="accordion-body">
+              <div class="form">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Name of visitor</label>
+                    <input type="text" class="form-control" id="visitorName" placeholder="ENTER NAME OF VISITOR" required [(ngModel)]="booking.visitorName">
+                  </div>
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">How many day will you stay?</label>
+                    <input type="text" class="form-control" id="dayNumber" placeholder="ENTER NUMBER OF DAYS" required [(ngModel)]="booking.dayNumber">
+                  </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">How many people will you be?</label>
+                  <input type="text" class="form-control" id="peopleNumber" placeholder="ENTER NUMBER OF PEOPLE" required [(ngModel)]="booking.peopleNumber">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">How many child do you have?</label>
+                  <input type="text" class="form-control" id="childrenNumber" placeholder="ENTER NUMBER OF CHILDREN" required [(ngModel)]="booking.children">
+                </div>
+                <div class="col-12">
+                  <button type="submit" id="bookAppartment" (click)="onUpload()">Book Apartment</button>
+                </div>
+              </div>
+        </div>
+      </div>
+</section>

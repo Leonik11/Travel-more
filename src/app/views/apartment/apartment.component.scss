@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Domine:wght@400;500;600;700&family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+$libre-font: 'Libre Baskerville', serif;
+$abroreto-font: 'Aboreto cursive';
+$active-color: #6fa0ca    ;
+$open-font: 'Open Sans', sans-serif;
+$main-color: #3d74a1;
+$hover-color: #ffffff;
+$wordscolor: #395f7f;
+
+section{
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+
+
+    aside.fourthaside{
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+       h2{
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: $wordscolor;
+        font-family: $abroreto-font;
+        font-size: 30px;
+        letter-spacing: 0.1em;
+        word-spacing: 0.3em;
+       }
+
+       span{
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: rgb(39, 38, 38);
+        font-family: $libre-font;
+        font-size: 15px;
+    }
+
+
+
+    div.sectiondiv{
+        width: 100%;
+        height: auto;
+        display:grid;
+        grid-template-columns: 1fr;
+        place-content: center;
+        place-items: center;
+        text-align: center;
+        row-gap: 30px;
+    
+    
+    div.accordionn{
+        width: 90%;
+        text-align: center !important;
+        height: auto;
+        border: transparent !important;
+    
+    
+    article{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-content: center;
+        place-items: center;
+        column-gap: 20px;
+        border: 1px solid $main-color;
+        border-radius: 20px;
+    
+        aside.image{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            padding: 0px;
+    
+            div.carousel{
+                width: 100% !important;
+                height: 100% !important;
+                border-radius: 20px !important;
+                div.carousel-inner{
+                width: 100% !important;
+                height: 100% !important;
+                 border-radius: 20px !important;
+                 div.carousel-item {
+                  width: 100% !important;
+                height: 100% !important;
+                 border-radius: 20px !important;
+                 img{
+                    width: 100% !important;
+                    height: 100% !important;
+                     border-radius: 20px !important;
+                 }
+                 }
+                }
+            }
+        }
+        aside.hotelinfo{
+            width: 95%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            padding-top: 20px;
+            padding-bottom: 20px;
+    
+            
+    
+            div.maindiv{
+                width: 100%;
+                height: auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 10px;
+                place-items: center;
+    
+                div{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 10px;
+    
+                    span.first{
+                        width: auto;
+                        height: auto;
+                        color: black;
+                        font-size: 14px;
+                        font-weight: 700;
+                        font-family: $libre-font;
+                    }
+    
+                    span.second{
+                        width: auto;
+                        height: auto;
+                        color: $wordscolor;
+                        font-size: 14px;
+                        font-weight: 500;
+                        font-family: $libre-font;
+                    }
+                }
+            }
+    
+            div.textdiv{
+                width: 100%;
+                height: auto;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 2fr;
+               
+                
+                div{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    flex-wrap: wrap;
+    
+                    p{
+                        width: 100%;
+                        height: auto;
+                        text-align: left;
+                        font-family: $abroreto-font;
+                        color: black;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+    
+                    span{
+                        width: 100%;
+                        height: auto;
+                        text-align: justify;
+                        color: $wordscolor;
+                        font-size: 14px;
+                        font-weight: 500;
+                        font-family: $libre-font;
+                    }
+                }
+            }
+    
+            div.btnn{
+                width: 100%;
+                height: auto;
+                text-align: left;
+                margin: 0px;
+                padding: 0px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 40px;
+    
+                button{
+                    width: 30% !important;
+                    height: 40px !important;
+                    background-color: transparent;
+                    border: 1px solid $main-color;
+                    color: $main-color;
+                    font-size: 14px;
+                    font-family: $libre-font;
+                    border-radius: 20px;
+                }
+                button:hover{
+                    border-color: $active-color;
+                    color: $active-color;
+                }
+                p{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $wordscolor;
+                    font-family: $libre-font;
+                    font-size: 15px;
+                    padding: 0px;
+                    margin: 0px;
+                }
+                a{
+                    text-decoration: none;
+                    color: $main-color;
+                    font-family: $libre-font;
+                    font-size: 15px;
+                }
+                a:hover{
+                    color: $active-color;
+                }
+            }
+    
+        }
+    }
+    }
+    }
+}
+
+}
+
+
+
+@media only screen and (max-width: 1413px){
+
+    section{
+    
+    
+        aside.fourthaside{
+        div.sectiondiv{
+            row-gap: 2%;
+        
+        
+        div.accordionn{
+        width: 100%;
+        article{
+            width: 100%;
+        }
+        }
+        }
+    }
+    
+    
+    }
+}
+
+@media only screen and (max-width: 1352px){
+
+    section{
+    
+    
+        aside.fourthaside{
+    
+    
+    
+    
+        div.sectiondiv{
+            row-gap: 30px;
+        
+        
+        div.accordionn{
+        
+        
+        article{
+            grid-template-columns: 1fr 1fr;
+        
+            
+            aside.hotelinfo{
+        
+                
+        
+                div.maindiv{
+                    grid-template-columns: 1fr 1fr;
+                    column-gap: 10px;
+        
+                    div{
+        
+                        span.first{
+                            font-size: 14px;
+                        }
+        
+                        span.second{
+                            font-size: 14px;
+                        }
+                    }
+                }
+        
+                div.textdiv{
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 2fr;
+                   
+                    
+                    div{
+        
+                        p{
+                            font-size: 20px;
+                        }
+        
+                        span{
+                            font-size: 14px;
+                        }
+                    }
+                }
+        
+                div.btnn{
+        
+                    button{
+                        font-size: 14px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                    a{
+                        font-size: 14px;
+                    }
+                }
+        
+            }
+        }
+        }
+        }
+    }
+    
+    
+    }
+}
+
+@media only screen and (max-width: 1272px){
+
+    section{
+    
+    
+        aside.fourthaside{
+            h2{
+                font-size: 25px;
+                letter-spacing: 0.1em;
+                word-spacing: 0.3em;
+               }
+        
+               span{
+                font-size: 14px;
+            }
+        div.sectiondiv{
+        div.accordionn{
+        article{
+            aside.hotelinfo{
+                div.maindiv{
+                    column-gap: 2%px;
+        
+                    div{
+        
+                        span.first{
+                            font-size: 12px;
+                        }
+        
+                        span.second{
+                            font-size: 12px;
+                        }
+                    }
+                }
+        
+                div.textdiv{
+                    
+                    div{
+        
+                        p{
+                            font-size: 14px;
+                        }
+        
+                        span{
+                            font-size: 12px;
+                        }
+                    }
+                }
+        
+                div.btnn{
+        
+                    button{
+                        font-size: 12px;
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                    a{
+                        font-size: 12px;
+                    }
+                }
+        
+            }
+        }
+        }
+        }
+    }
+    
+    
+    }
+}
+
+@media only screen and (max-width: 1186px){
+
+    section{
+        aside.fourthaside{
+        div.sectiondiv{
+        div.accordionn{
+        article{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            aside.hotelinfo{
+                div.maindiv{
+                    column-gap: 2%;
+        
+                    div{
+        
+                        span.first{
+                            font-size: 12px;
+                        }
+        
+                        span.second{
+                            font-size: 12px;
+                        }
+                    }
+                }
+        
+                div.textdiv{
+                    
+                    div{
+        
+                        p{
+                            font-size: 14px;
+                        }
+        
+                        span{
+                            font-size: 12px;
+                        }
+                    }
+                }
+        
+            }
+        }
+        }
+        }
+    }
+    
+    
+    }
+}
+@media only screen and (max-width: 814px){
+
+    section{
+        aside.fourthaside{
+            width: 98%;
+            h2{
+                font-size: 20px;
+                letter-spacing: 0.1em;
+                word-spacing: 0.2em;
+               }
+        
+               span{
+                font-size: 12px;
+            }
+        div.sectiondiv{
+            width: 100%;
+        div.accordionn{
+        article{
+            grid-template-columns: 1fr;
+            aside.hotelinfo{
+                div.maindiv{
+        
+                    div{
+        
+                        span.first{
+                            font-size: 10px;
+                        }
+        
+                        span.second{
+                            font-size: 10px;
+                        }
+                    }
+                }
+        
+                div.textdiv{
+                    display: flex;
+                        width: 100%;
+                        flex-wrap: wrap;
+                        gap: 10%;
+                    div{
+                        display: flex;
+                        width: 100%;
+                        flex-wrap: wrap;
+                        padding: 0px;
+                        p{
+                            width: 100%;
+                            font-size: 12px;
+                            padding: 0px;
+                            margin: 1px;
+                        }
+        
+                        span{
+                            width: 100%;
+                            font-size: 10px;
+                            padding: 0px;
+                        }
+                    }
+                }
+        
+                div.btnn{
+        
+                    button{
+                        font-size: 10px;
+                    }
+                    p{
+                        font-size: 10px;
+                    }
+                    a{
+                        font-size: 10px;
+                    }
+                }
+        
+            }
+        }
+        }
+        }
+    }
+    
+    
+    }
+}
+
+@media only screen and (max-width: 542px){
+
+    section{
+        aside.fourthaside{
+        div.sectiondiv{
+        div.accordionn{
+        article{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1%;
+            flex-wrap: wrap;
+            aside.hotelinfo{
+                div.maindiv{
+        
+                    div{
+        
+                        span.first{
+                            text-align: left;
+                        }
+                    }
+                }
+        
+            }
+        }
+        }
+        }
+    }
+    
+    
+    }
+}
+
+@media only screen and (max-width: 483px){
+
+    section{
+    
+        aside.fourthaside{
+            div.sectiondiv{
+            div.accordionn{
+            article{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1%;
+                flex-wrap: wrap;
+                aside.hotelinfo{
+                    div.maindiv{
+                        grid-template-columns: 1fr;
+                        div{
+            
+                            span.first{
+                                text-align: left;
+                            }
+                        }
+                    }
+                    div.btnn{
+                        button{
+                           font-size: 8px;
+                        }
+                        p{
+                            font-size: 8px;
+                        }
+                        a{
+                            font-size: 8px;
+                        }
+                    }
+            
+                }
+            }
+            }
+            }
+        }
+    
+    }
+}

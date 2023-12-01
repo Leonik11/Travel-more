@@ -1,0 +1,34 @@
+<section>
+    <div class="accordionn"  id="flush-collapseOne" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="text">
+            <h2>PAYMENT WILL BE PROCCESSED</h2>
+        </div>
+        <div class="accordion-body">
+              <div class="form">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="payFullName" placeholder="ENTER FULL NAME" required [(ngModel)]="payment.fullName">
+                  </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Phone Number</label>
+                  <input type="text" class="form-control" id="payPhoneNumber" placeholder="ENTER PHONE NUMBER" required [(ngModel)]="payment.phoneNumber">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Card Information</label>
+                  <input type="text" class="form-control" id="cardInformation" placeholder="1234-1234-1234-1234" required [(ngModel)]="payment.card">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">MM/YY</label>
+                  <input type="text" class="form-control" id="MMYY" value=""  placeholder="MM/YY" required [(ngModel)]="payment.MMYY">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">CVC</label>
+                    <input type="text" class="form-control" id="CVC" value="" placeholder="CVC" required [(ngModel)]="payment.CVC">
+                  </div>
+                <div class="col-12">
+                  <button type="submit" class="cardbutton buttona" (click)="onUpload()">PAY</button>
+                </div>
+        </div>
+      </div>
+</div>
+</section>
